@@ -1,6 +1,6 @@
 ## Repository info
 
-This github repository contains all the necessary files to run the project KiiT-Sync. The project is a web application that allows students & teachers to access their daily timetable & academic information in one place. The project is built using Next JS, a modern javascript framework. The project is will be primarily hosted on Vercel, a cloud platform for static sites and serverless functions. The project is currently under development and is not yet ready for production.
+This github repository contains all the necessary files regarding konnexions landing page. This project serves the purpose of a landing page for the konnexions team. The project is built using Next JS, a modern javascript framework. The project is will be primarily hosted on Vercel, a cloud platform for static sites and serverless functions. It will include necessary pages like Home, Team, Events, Contact & other pages as per the requirement.
 
 ## File structure
 
@@ -22,6 +22,6 @@ If you are confident about your commits you can push it directly to the main bra
 
 ## What next?
 
-- [ ] The boiler plate code for the project is ready.
+- [x] The boiler plate code for the project is ready.
 - [ ] Waiting for clearance from the UI/UX team to start the development.
 - [ ] The contact details of the project admin will be updated soon.
