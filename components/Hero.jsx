@@ -14,7 +14,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="pb-20 mb-20">
+    <div className="pb-20 mb-12">
       <div className="flex flex-row justify-evenly flex-shrink items-center invisible md:visible w-full border-b border-neutral-600 select-none h-0 md:h-auto">
         <div className="flex flex-row flex-shrink items-center justify-start w-1/3 gap-10">
           <div className="flex py-4">
@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="flex flex-row flex-shrink items-center justify-evenly w-1/3">
           <div className="flex py-4">
             <h1 className="text-neutral-400 text-[14px]">
-              {currentTime.toLocaleTimeString(navigator.language, {
+              {currentTime.toLocaleTimeString("en-US", {
                 hour: "2-digit",
                 minute: "2-digit",
               })}
@@ -81,7 +81,7 @@ const Hero = () => {
             <div>
               <p className="max-w-[85%] mt-10 font-normal text-balance text-neutral-400 leading-snug">
                 Join us to unlock boundless opportunities, forge invaluable
-                connections, and elevate KIIT's prestige through remarkable
+                connections, and elevate KIIT&apos;s prestige through remarkable
                 achievements in the ever-evolving digital realm.
               </p>
             </div>
