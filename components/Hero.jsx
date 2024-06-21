@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="flex flex-row flex-shrink items-center justify-evenly w-1/3">
           <div className="flex py-4">
             <h1 className="text-neutral-400 text-[14px]">
-              {currentTime.toLocaleTimeString(navigator.language, {
+              {currentTime.toLocaleTimeString(navigator?.language, {
                 hour: "2-digit",
                 minute: "2-digit",
               })}
