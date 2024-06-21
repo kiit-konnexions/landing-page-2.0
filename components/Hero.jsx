@@ -1,20 +1,35 @@
+"use client";
 import { FaArrowRightLong, FaGripLines } from "react-icons/fa6";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="pb-20 mb-20">
       <div className="flex flex-row justify-evenly flex-shrink items-center invisible md:visible w-full border-b border-neutral-600 select-none h-0 md:h-auto">
         <div className="flex flex-row flex-shrink items-center justify-start w-1/3 gap-10">
           <div className="flex py-4">
             <h1 className="text-neutral-400 text-[14px]">
-              {new Date().toDateString()}
+              {currentTime.toDateString()}
             </h1>
           </div>
         </div>
         <div className="flex flex-row flex-shrink items-center justify-evenly w-1/3">
           <div className="flex py-4">
             <h1 className="text-neutral-400 text-[14px]">
-              {new Date().toLocaleTimeString()}
+              {currentTime.toLocaleTimeString(navigator.language, {
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
             </h1>
           </div>
         </div>
@@ -59,12 +74,12 @@ const Hero = () => {
         <div className="w-full md:w-[60%] lg:w-2/3 md:pr-8 lg:pr-0">
           <div className="flex flex-col items-start">
             <div>
-              <h1 className="pb-4 text-[42px] font-normal tracking-tight leading-snug lg:text-[56px] bg-clip-text select-none bg-neutral-200 text-transparent">
+              <h1 className="text-[42px] font-normal tracking-tight leading-snug lg:text-[56px] bg-clip-text select-none bg-neutral-200 text-transparent">
                 Architec of Technological Advancements
               </h1>
             </div>
             <div>
-              <p className="max-w-[85%] pt-6 font-normal text-balance text-neutral-400 leading-snug">
+              <p className="max-w-[85%] mt-10 font-normal text-balance text-neutral-400 leading-snug">
                 Join us to unlock boundless opportunities, forge invaluable
                 connections, and elevate KIIT's prestige through remarkable
                 achievements in the ever-evolving digital realm.
