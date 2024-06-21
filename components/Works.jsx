@@ -21,7 +21,7 @@ const Works = () => {
         <div>
           <p className="mt-3 font-normal text-neutral-500 leading-snug text-center max-w-lg">
             Join us to unlock boundless opportunities, forge invaluable
-            connections, and elevate KIIT's prestige through remarkable
+            connections, and elevate KIIT&apos;s prestige through remarkable
             achievements in the ever-evolving digital realm.
           </p>
         </div>
