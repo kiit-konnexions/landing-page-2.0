@@ -1,5 +1,6 @@
-import Works from "../components/Works";
 import Hero from "../components/Hero";
+import Works from "@/components/Works";
+import Statistics from "@/components/Statistics";
 
 export default function Home() {
   return (
@@ -8,6 +9,9 @@ export default function Home() {
         <div className="container mx-auto px-5 lg:px-0 ">
           <Hero />
         </div>
+      </div>
+      <div className="bg-[#FFFFFF] min-h-[70vh]">
+        <Statistics/>
       </div>
       <div className="bg-neutral-100">
         <div className="container mx-auto px-5 lg:px-0 ">
