@@ -14,7 +14,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="pb-20 mb-12">
+    <div className="pb-20 mb-12 md:px-4">
       <div className="flex flex-row justify-evenly flex-shrink items-center invisible md:visible w-full border-b border-neutral-600 select-none h-0 md:h-auto">
         <div className="flex flex-row flex-shrink items-center justify-start w-1/3 gap-10">
           <div className="flex py-4">
