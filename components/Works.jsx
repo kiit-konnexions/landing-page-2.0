@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import { works } from "../constants/works";
+import { works } from "@/constants/works";
 
 const Works = () => {
   const [openItemIndex, setOpenItemIndex] = useState(-1);

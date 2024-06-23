@@ -2,9 +2,9 @@ const Statistics = () => {
   return (
     <>
   <div className="flex lg:justify-between justify-center items-center w-full lg:px-40 px-4 lg:pt-[90px] pt-[10px] lg:flex-row flex-col">
-    <div className="text-black lg:text-[40px] text-[15px] my-16 text-wrap h-full flex flex-col justify-center font-bold uppercase lg:normal-case">
-        Konnexions fuels the next wave of tech <br />innovators. Our IT and Web Development <br />
-        <span className="text-[#9A9B9F]">society equips students with cutting-edge <br /> skills.</span>      
+    <div className="text-black lg:text-[40px] text-[15px] my-16 text-wrap h-full flex flex-col justify-center xl:font-normal font-bold uppercase lg:normal-case xl:w-1/2">
+        Konnexions fuels the next wave of tech innovators. Our IT and Web Development
+        <span className="text-[#9A9B9F] xl:font-normal font-bold">society equips students with cutting-edge skills.</span>      
     </div>
     <div className="flex justify-around gap-10 h-full">
       <div className="flex flex-col justify-end">

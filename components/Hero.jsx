@@ -1,5 +1,7 @@
 "use client";
+
 import { FaArrowRightLong, FaGripLines } from "react-icons/fa6";
+import { Button } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 
 const Hero = () => {
@@ -79,29 +81,37 @@ const Hero = () => {
               </h1>
             </div>
             <div>
-              <p className="max-w-[85%] mt-10 font-normal text-balance text-neutral-400 leading-snug">
+              <p className="max-w-[85%] mt-10 font-normal text-balance text-neutral-400 leading-6">
                 Join us to unlock boundless opportunities, forge invaluable
                 connections, and elevate KIIT&apos;s prestige through remarkable
                 achievements in the ever-evolving digital realm.
               </p>
             </div>
             <div className="flex flex-wrap flex-row gap-6 mt-12">
-              <div className="px-6 py-2 bg-neutral-200 rounded-full border-2 border-neutral-200 group hover:bg-transparent transition-all ease-in-out duration-200 cursor-pointer flex items-center">
-                <span className="flex flex-row gap-3 items-center justify-center">
-                  <h1 className="text-[14px] font-normal tracking-tight text-neutral-800 group-hover:text-neutral-200">
-                    JOIN US
-                  </h1>
-                  <FaArrowRightLong className="text-[14px] text-neutral-800 group-hover:text-neutral-200"></FaArrowRightLong>
-                </span>
-              </div>
-              <div className="px-6 py-2 bg-transparent rounded-full border-neutral-200/30 border-2 flex items-center cursor-pointer">
-                <span className="flex flex-row gap-3 items-center justify-center">
-                  <h1 className="text-[14px] font-normal tracking-tight text-neutral-200">
-                    DEV RESOURCES
-                  </h1>
-                  <FaArrowRightLong className="text-[14px] text-neutral-200"></FaArrowRightLong>
-                </span>
-              </div>
+              <Button
+                radius="full"
+                variant="solid"
+                endContent={
+                  <FaArrowRightLong className="text-[14px] text-neutral-800 ml-1" />
+                }
+                className="bg-neutral-100 border-2 border-neutral-100 px-6 group"
+              >
+                <h1 className="text-[14px] tracking-tight text-neutral-800 font-medium">
+                  JOIN US
+                </h1>
+              </Button>
+              <Button
+                radius="full"
+                variant="ghost"
+                endContent={
+                  <FaArrowRightLong className="text-[14px] text-neutral-100 ml-1 group-hover:text-neutral-900" />
+                }
+                className="bg-transparent border-2 border-neutral-200/30 px-6 group"
+              >
+                <h1 className="text-[14px] tracking-tight text-neutral-100 font-medium group-hover:text-neutral-900">
+                  DEV RESOURCES
+                </h1>
+              </Button>
             </div>
           </div>
         </div>
