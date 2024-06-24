@@ -1,6 +1,8 @@
 import Hero from "@/components/Hero";
 import Works from "@/components/Works";
 import Statistics from "@/components/Statistics";
+import Card from "@/components/Card";
+
 
 export default function Home() {
   return (
@@ -16,6 +18,11 @@ export default function Home() {
       <div className="bg-neutral-100">
         <div className="container mx-auto px-5">
           <Works />
+        </div>
+      </div>
+      <div className="bg-neutral-100">
+        <div className="container mx-auto px-5 lg:px-0 ">
+          <Card/>
         </div>
       </div>
     </main>
